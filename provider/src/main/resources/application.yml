@@ -1,0 +1,12 @@
+server:
+  port: 7777
+
+# 需指明，服务和服务之间相互调用一般根据该name
+spring:
+  application:
+    name: provider
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/
